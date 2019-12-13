@@ -1,0 +1,154 @@
+./*
+dark blue - #28587B
+teal - #95D9C3
+light gray - #8AA39B
+dark gray - #5C6F68
+gray green - #9FB798*/
+
+
+/* Global Styles
+======================= */
+body{
+  color: #ECFCF0;
+  margin: 0
+}
+h2{
+  margin-top: 0;
+}
+h3{
+  margin: 0;
+}
+a {
+  color: #95D9C3;
+}
+a:hover{
+  color: red;
+}
+
+.content-wrap{
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 60px 50px;
+  overflow: auto;
+}
+.uppercase{
+  text-transform: uppercase;
+}
+.btn{
+  text-decoration: none;
+  background-color: red;
+  color: white;
+  padding: 10px;
+  display: inline-block;
+  border-radius: 5px;
+}
+/* Navigation
+=======================*/
+nav{
+  text-align: center;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  position:  fixed;
+  top: 5px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+/* Header and Footer
+=======================*/
+header, footer {
+  background: #28587B;
+}
+header{
+  padding-top: 50px;
+  position: relative;
+}
+.download{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+header h2, header h1{
+  text-transform: capitalize;
+  color: white;
+  margin: 5px;
+}
+footer{
+  text-align: center;
+}
+.contact-links a{
+  background-color: white;
+  margin: 10px;
+  padding: 5px;
+  display: inline-block;
+}
+#about{
+  padding-bottom: 0;
+}
+.profile-img{
+  height: 200px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 30px;
+}
+
+/* Work Experience
+======================= */
+.work {
+  background: #8AA39B;
+  background-image: url('https://picsum.photos/id/1036/4608/3072');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #0a070a;
+}
+h3 ~ p{
+  margin: 0;
+}
+.job-description{
+margin-bottom: 25px;
+}
+.job-description p:first-of-type{
+  margin-top: 0;
+}
+
+/* Education
+=======================*/
+.education{
+  background-image: url('https://picsum.photos/1200/300');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: black;
+}
+.education ~ h3{
+  float: left;
+  color: red;
+}
+p + h3{
+  margin-top: 30px;
+}
+
+/* Education
+=======================*/
+@media (min-width: 900px) {
+  .col-wide{
+    width: 70%;
+    float: left;
+    min-height: 100px;
+  }
+  .col-narrow{
+    width: 30%;
+    float: left;
+    min-height: 100px;
+  }
+}
+@media (max-width: 899px) {
+  header{
+    text-align: center;
+  }
+  .profile-img{
+    width: 250px;
+  }
+}
