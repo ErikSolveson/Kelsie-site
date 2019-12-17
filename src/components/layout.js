@@ -11,6 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
+import Sky from "../images/night-sky.jpg"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -25,7 +26,15 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+    <div class="container">
+      <img src={Sky} style={{
+        width: '100%',
+      }}
+       alt="the night sky"
+       />
+       <h1 class="jumbotext">Kelsie Dyell</h1>
+       <p class="subtext">Resume</p> 
+    </div>
       <div
         style={{
           margin: `0 auto`,

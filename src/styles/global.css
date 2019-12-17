@@ -9,8 +9,9 @@ gray green - #9FB798*/
 /* Global Styles
 ======================= */
 body{
-  color: #ECFCF0;
-  margin: 0
+  color: #E6E6FA;
+  margin: 0;
+  background-color: #E6E6FA;
 }
 h2{
   margin-top: 0;
@@ -23,6 +24,9 @@ a {
 }
 a:hover{
   color: red;
+}
+.bold{
+  font-weight: bold;
 }
 
 .content-wrap{
@@ -60,6 +64,29 @@ nav{
 =======================*/
 header, footer {
   background: #28587B;
+}
+.jumbotext{
+  z-index: 1;
+  color: white;
+  font-weight: 600;
+  font-size: 30;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Montserrat;
+  border-bottom: white solid 1px;
+}
+.subtext{
+  z-index: 1;
+  color: white;
+  font-weight: 600;
+  font-size: 30;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  fort-family: ;
 }
 header{
   padding-top: 50px;
