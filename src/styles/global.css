@@ -1,23 +1,7 @@
-./*
-dark blue - #28587B
-teal - #95D9C3
-light gray - #8AA39B
-dark gray - #5C6F68
-gray green - #9FB798*/
-
-
 /* Global Styles
 ======================= */
 body{
-  color: #E6E6FA;
-  margin: 0;
-  background-color: #E6E6FA;
-}
-h2{
-  margin-top: 0;
-}
-h3{
-  margin: 0;
+  background-color: #f4daff;
 }
 a {
   color: #95D9C3;
@@ -35,16 +19,8 @@ a:hover{
   padding: 60px 50px;
   overflow: auto;
 }
-.uppercase{
-  text-transform: uppercase;
-}
-.btn{
-  text-decoration: none;
-  background-color: red;
-  color: white;
-  padding: 10px;
-  display: inline-block;
-  border-radius: 5px;
+.banner{
+  background-image: "../images/hops2.jpg"
 }
 /* Navigation
 =======================*/
@@ -60,14 +36,14 @@ nav{
   border-radius: 10px;
 }
 
-/* Header and Footer
+/* Banner Image and subtext
 =======================*/
-header, footer {
-  background: #28587B;
+.grayscale{
+  filter: grayscale(100%);
 }
 .jumbotext{
   z-index: 1;
-  color: white;
+  color: #6f2da8;
   font-weight: 600;
   font-size: 30;
   position: absolute;
@@ -75,11 +51,11 @@ header, footer {
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: Montserrat;
-  border-bottom: white solid 1px;
+  border-bottom: #6f2da8 solid 1px;
 }
 .subtext{
   z-index: 1;
-  color: white;
+  color: #6f2da8;
   font-weight: 600;
   font-size: 30;
   position: absolute;
@@ -88,32 +64,9 @@ header, footer {
   transform: translate(-50%, -50%);
   fort-family: ;
 }
-header{
-  padding-top: 50px;
-  position: relative;
-}
-.download{
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-header h2, header h1{
-  text-transform: capitalize;
-  color: white;
-  margin: 5px;
-}
-footer{
-  text-align: center;
-}
-.contact-links a{
-  background-color: white;
-  margin: 10px;
-  padding: 5px;
-  display: inline-block;
-}
-#about{
-  padding-bottom: 0;
-}
+
+/* Profile image and Summary
+======================= */
 .profile-img{
   height: 200px;
   border-radius: 50%;
@@ -130,34 +83,31 @@ footer{
   background-size: cover;
   color: #0a070a;
 }
-h3 ~ p{
-  margin: 0;
+.row-1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
 }
-.job-description{
-margin-bottom: 25px;
-}
-.job-description p:first-of-type{
-  margin-top: 0;
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
 }
 
 /* Education
 =======================*/
 .education{
   background-image: url('https://picsum.photos/1200/300');
-  background-size: contain;
-  background-repeat: no-repeat;
   background-position: center;
   color: black;
-}
-.education ~ h3{
-  float: left;
-  color: red;
 }
 p + h3{
   margin-top: 30px;
 }
 
-/* Education
+/* media queries
 =======================*/
 @media (min-width: 900px) {
   .col-wide{

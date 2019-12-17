@@ -11,7 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
-import Sky from "../images/night-sky.jpg"
+import Vineyard from "../images/vineyard.jpg"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -27,13 +27,13 @@ const Layout = ({ children }) => {
   return (
     <>
     <div class="container">
-      <img src={Sky} style={{
+      <img class="grayscale" src={Vineyard} style={{
         width: '100%',
       }}
        alt="the night sky"
        />
        <h1 class="jumbotext">Kelsie Dyell</h1>
-       <p class="subtext">Resume</p> 
+       <p class="subtext">Resume</p>
     </div>
       <div
         style={{
@@ -45,9 +45,6 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>
       </div>
     </>

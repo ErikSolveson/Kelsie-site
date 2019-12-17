@@ -64,10 +64,6 @@ h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
-mark {
-  background-color: #ff0;
-  color: #000;
-}
 small {
   font-size: 80%;
 }
@@ -199,7 +195,6 @@ html {
   box-sizing: inherit;
 }
 body {
-  color: hsla(0, 0%, 0%, 0.8);
   font-family: georgia, serif;
   font-weight: normal;
   word-wrap: break-word;
@@ -208,6 +203,7 @@ body {
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
+  color: black;
 }
 img {
   max-width: 100%;
@@ -253,6 +249,7 @@ h2 {
   text-rendering: optimizeLegibility;
   font-size: 1.62671rem;
   line-height: 1.1;
+  text-align: center;
 }
 h3 {
   margin-left: 0;
