@@ -4,7 +4,7 @@ body{
   background-color: #f4daff;
 }
 a {
-  color: #95D9C3;
+  color: violet;
 }
 a:hover{
   color: red;
@@ -20,20 +20,9 @@ a:hover{
   overflow: auto;
 }
 .banner{
-  background-image: "../images/hops2.jpg"
-}
-/* Navigation
-=======================*/
-nav{
-  text-align: center;
-  padding: 20px 15px;
-  text-decoration: none;
-  text-transform: capitalize;
-  position:  fixed;
-  top: 5px;
-  width: 100%;
-  background-color: white;
-  border-radius: 10px;
+  background-image: "../images/hops1.jpg";
+  height: 100px;
+  width: auto;
 }
 
 /* Banner Image and subtext
@@ -73,12 +62,21 @@ nav{
   float: left;
   margin-right: 30px;
 }
+.skills{
+  background-color: lightgray;
+  width: 100%;
+  text-align: center;
+  border-radius: 40px;
+  margin: 30px 30px;
+}
+.nobullets{
+  list-style-type: none;
+}
 
 /* Work Experience
 ======================= */
 .work {
   background: #8AA39B;
-  background-image: url('https://picsum.photos/id/1036/4608/3072');
   background-repeat: no-repeat;
   background-size: cover;
   color: #0a070a;
@@ -95,11 +93,14 @@ nav{
   flex-basis: 100%;
   flex: 1;
 }
+hr{
+  size: 10px;
+  width: 90%;
+}
 
 /* Education
 =======================*/
 .education{
-  background-image: url('https://picsum.photos/1200/300');
   background-position: center;
   color: black;
 }

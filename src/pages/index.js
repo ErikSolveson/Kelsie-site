@@ -5,9 +5,11 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import Kelsie from "../images/kelsie-adorable.jpg"
+import Navigation from "../components/navigation"
 
 const IndexPage = () => (
   <Layout>
+    <Navigation />
     <SEO title="Home" />
     <section class="summary">
         <h2>Professional Summary</h2>
@@ -16,10 +18,10 @@ const IndexPage = () => (
         <h3>Summary</h3>
         <p>Energetic, creative, self-motivated individual with a passion for winemaking.  Outgoing, team player with excellent interpersonal skills allowing for successful interactions with customers in varying situations.  Interacts easily with people of diverse backgrounds, cultures, and professions.  Possesses effective speaking and listening skills as well as outstanding verbal and written communication skills.  Works well with others and is able to complete tasks with little or no supervision.</p>
     </section>
-    <section class="content-wrap">
+    <section class="content-wrap skills">
   {/*Job Details*/}
         <h2>Skills</h2>
-        <ul>
+        <ul class="nobullets">
             <li>Pruning; cane pruned vines in the winter</li>
             <li>Harvest experience; harvested red and white varieties in a vineyard</li>
             <li>Marketing; advertised companies and studied marketing in college</li>
@@ -48,6 +50,7 @@ const IndexPage = () => (
             </ul>
           </div>
       </div>
+      <hr />
       <div class="row-1">
         <div class="column">
         <h3>Secretary</h3>
@@ -81,7 +84,7 @@ const IndexPage = () => (
     </section>
     {/*Education*/}
     <section>
-        <h2 class="education">Education</h2>
+        <h2 id="education" class="education">Education</h2>
          {/*School 1 details*/}
         <h3>Bachelor of Science, Viticulture and Enology</h3>
         <p>Washington State University, 2019</p>

@@ -17,7 +17,6 @@ footer,
 header,
 main,
 menu,
-nav,
 section,
 summary {
   display: block;
@@ -203,7 +202,7 @@ body {
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
-  color: black;
+  color: #434242;
 }
 img {
   max-width: 100%;
